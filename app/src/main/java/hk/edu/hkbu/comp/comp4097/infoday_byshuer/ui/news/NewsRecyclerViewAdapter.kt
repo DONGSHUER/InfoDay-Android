@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.squareup.picasso.Picasso
 import edu.hkbu.comp.comp4097.infoday_byshuer.data.News
 import hk.edu.hkbu.comp.comp4097.infoday_byshuer.R
 
@@ -34,7 +35,7 @@ class NewsRecyclerViewAdapter(
         val item = values[position]
         holder.titleTextView.text = item.title
         holder.detailTextView.text = item.detail
-//        Picasso.get().load(item.image).into(holder.newsImageView)
+        Picasso.get().load(item.image).into(holder.newsImageView)
     }
 
     override fun getItemCount(): Int = values.size
