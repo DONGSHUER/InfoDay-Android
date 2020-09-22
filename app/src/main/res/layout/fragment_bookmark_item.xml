@@ -4,17 +4,15 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
-    // Full Name
     <TextView
-        android:id="@+id/deptNameView"
+        android:id="@+id/bookmarkTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
         android:textAppearance="?attr/textAppearanceListItem" />
 
-    // Event Name
     <TextView
-        android:id="@+id/eventTextView"
+        android:id="@+id/bookmarkContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"

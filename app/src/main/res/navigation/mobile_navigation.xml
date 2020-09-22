@@ -21,7 +21,12 @@
         android:id="@+id/eventFragment"
         android:name="hk.edu.hkbu.comp.comp4097.infoday_byshuer.ui.events.EventFragment"
         android:label="Event"
-        tools:layout="@layout/fragment_event_list" />
+        tools:layout="@layout/fragment_event_list" >
+    <action
+        android:id="@+id/action_eventFragment_self"
+        app:destination="@id/eventFragment"
+        />
+    </fragment>
 
     <fragment
         android:id="@+id/mapsFragment"
@@ -33,7 +38,11 @@
         android:id="@+id/infoFragment"
         android:name="hk.edu.hkbu.comp.comp4097.infoday_byshuer.ui.info.InfoFragment"
         android:label="Info" />
-
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="hk.edu.hkbu.comp.comp4097.infoday_byshuer.ui.events.BookmarkFragment"
+        android:label="Bookmarks"
+        tools:layout="@layout/fragment_bookmark_list" />
 
 
 </navigation>
