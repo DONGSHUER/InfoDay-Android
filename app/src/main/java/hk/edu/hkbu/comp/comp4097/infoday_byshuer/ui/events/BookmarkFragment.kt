@@ -50,10 +50,11 @@ class BookmarkFragment : Fragment() {
                     val events =
                         dao.findAllBookmarkedEvents()
                     CoroutineScope(Dispatchers.Main).launch {
-                        adapter = EventRecyclerViewAdapter(events)
+//                        adapter = EventRecyclerViewAdapter(events)
+                        adapter = BookmarkRecyclerViewAdapter(events.toMutableList())
                     }
                 }
-                (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
+//                (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
             }
         }
         return view
